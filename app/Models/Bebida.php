@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Bebida extends Model
 {
     use HasFactory;
+    public $table = 'bebida';
+    protected $primaryKey = 'id';
+    public $incrementing = 'true';
+
+    protected $fillable = [
+        'nombre',
+        'sabor',
+        'presentacion',
+        'cantidad',
+    ];
 }
